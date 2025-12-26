@@ -5,6 +5,7 @@ LOCKED="locked.tar.age"
 DEC="dec"
 
 if [ -d "$DEC" ]; then
+  rm -f "$DEC"/*.pdf
   tar -C "$DEC" -cf locked.tar .
   age -p -o "$LOCKED" locked.tar
   rm -f locked.tar

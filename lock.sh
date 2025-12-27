@@ -16,5 +16,6 @@ else
   age -d -o locked.tar "$LOCKED"
   tar -C "$DEC" -xf locked.tar
   rm -f locked.tar
-  echo "Unlocked"
+  echo "Unlocked, compileing..."
+  ./dec/compile.sh
 fi
